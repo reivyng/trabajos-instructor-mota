@@ -29,7 +29,6 @@ class Conexion
             ];
             if ($this->pdo === null) {
                 $this->pdo = new PDO($dsn, $this->usuario, $this->password, $options);
-                
             }
             return $this->pdo;
         } catch (PDOException $e) {
