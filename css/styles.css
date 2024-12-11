@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura del viewport */
+    background-image: url('../img/paisaje.jpeg');
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+}
+/* Estilos para el menú lateral */
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d2d2d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menu-lateral a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: #f1f1f1;
+}
+
+.menu-lateral .cerrar-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.abrir-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    border: none;
+}
+
+.contenido {
+    margin-left: 60px;
+    padding: 20px;
+    color: rgb(6, 5, 5);
+}
+
+.contenido h2 {
+    color: rgb(18, 18, 18);
+    font-size: 3vw;
+}
+
+.contenido p {
+    font-size: 18px;
+}

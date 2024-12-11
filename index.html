@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral con Contenido Dinámico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="menuLateral" class="menu-lateral">
+        <a href="javascript:void(0)" class="cerrar-btn" onclick="cerrarMenu()">&times;</a>
+        <a href="#" onclick="cargarContenido('resumen.html')">Resumen ejecutivo</a>
+        <a href="#" onclick="cargarContenido('intro.html')">Introducción</a>
+        <a href="#" onclick="cargarContenido('descripcion.html')">Descripcion del proyecto</a>
+        <a href="#" onclick="cargarContenido('solucion.html')">Solucion propuesta</a>
+        <a href="#" onclick="cargarContenido('plan.html')">Plan de trabajo</a>
+        <a href="#" onclick="cargarContenido('equipo.html')">Equipo de trabajo</a>
+        <a href="#" onclick="cargarContenido('propuesta.html')">Propuesto</a>
+        <a href="#" onclick="cargarContenido('mantenimiento.html')">Plan de mantenimiento y soporte</a>
+        <a href="#" onclick="cargarContenido('historias.html')">Historias de usuario</a>
+        <a href="#" onclick="cargarContenido('identificación.html')">Identificación de requerimientos funcionales y no funcionales</a>
+        <a href="#" onclick="cargarContenido('mer.html')">Modelo Entidad Relacion</a>
+        <a href="#" onclick="cargarContenido('casos.html')">Diagramas de casos de uso</a>
+        <a href="#" onclick="cargarContenido('posiblesFallos.html')">Posibles Fallos</a>
+    </div>
+
+    <button class="abrir-btn" onclick="abrirMenu()">&#9776; Abrir Menú</button>
+
+    <div class="contenido" id="contenidoPrincipal">
+        <h2>Bienvenido</h2>
+        <p>Esta es la pagina creada por el equipo de trabajo llamado BINGO-SAURO con el fin de presentar la evidencia al
+            instructon Jose de Jesus</p>
+        <br>
+
+        <p>Equipo de trabajo</p>
+        <br>
+        <p>Reyving Fabriany Ramirez Medina</p>
+        <p>July Daniela Ramos Peña</p>
+        <p>Brayan Alberto Perdomo</p>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
